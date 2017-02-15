@@ -1,0 +1,10 @@
+
+.data{
+    width:2in;
+    height: 2in;
+    border-color: black;
+    border-style: solid;
+    border-width: 7px;
+    background-color: aqua;
+    color:yellow;
+}

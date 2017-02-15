@@ -5,10 +5,47 @@
         <meta charset="utf-8"/>
         <meta http-equiv="S-UA-Compativle" content="ie=edge" />
         <title>CIT 261 Examples</title>
-    </head>
+        <link rel="stylesheet" type="text/css" href="AJMusic.css">
+       <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load('current', {packages: ['corechart']});
+  google.charts.setOnLoadCallback(drawChart);
+  function drawChart() {
 
-    <body>
-Love is the song of the heart.
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['Mushrooms', 3],
+          ['Onions', 1],
+          ['Olives', 1],
+          ['Zucchini', 1],
+          ['Pepperoni', 2]
+        ]);
+
+        // Set chart options
+        var options = {'title':'How Much Pizza I Ate Last Night',
+                       'width':400,
+                       'height':300};
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+</script>
+    </head>
+ 
+
+    <body> 
+        <div id="chart_div"></div>
+        <div class="data">Data from practice moment.</div>
+        <div>
+            <button>Technique</button>
+            <button>Dexterity</button>
+            <button>Theory</button>
+            <button>Repertoire</button>
+        </div>
 </body>
 
     </html>

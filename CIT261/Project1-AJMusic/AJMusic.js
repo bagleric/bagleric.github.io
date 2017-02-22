@@ -1,12 +1,12 @@
 function getTips()
 {
     console.log("Function: getTips");
-            xmlhttp = new XMLHttpRequest();
-            xmlhttp.onreadystatechange = function () {
-                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            data = new XMLHttpRequest();
+            data.onreadystatechange = function () {
+                if (data.readyState == 4 && data.status == 200) {
                  
                   console.log("AJAX: succesful");  
-                    var object = JSON.parse(xmlhttp.responseText);
+                    var object = JSON.parse(data.responseText);
                     console.log(object);
                     
                     sessionStorage.setItem("tips", object);
@@ -15,6 +15,6 @@ function getTips()
                     console.log("AJAX: working");
                 }
             }
-            xmlhttp.open("GET", "https://bagleric.github.io/CIT261/Project1-AJMusic/tasks.json", true);
-            xmlhttp.send();
+            data.open("GET", "https://bagleric.github.io/CIT261/Project1-AJMusic/tasks.json", true);
+            data.send();
         }

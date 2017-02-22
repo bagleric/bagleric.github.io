@@ -10,7 +10,7 @@
         
     </head>
  
-    <body onload="fetchJSONFile('tasks.json')"> 
+    <body onload="getTips()"> 
         <div class="view">
         <div id="chart_div">Here will be the weekly activity summary.</div>
         <div class="data" id="data">
@@ -22,7 +22,7 @@
             <span class="buttons">
             <button class="button" id="vibrato"     ontouchstart= "showTip(this.id)">Vibrato     </button>
             <button class="button" id="scales"      ontouchstart= "showTip(this.id)">Scales      </button>  
-            <button class="button" id="arpeggios"   ontouchstart= "showTip(this.id)">Arpeggios   </button>
+            <button class="button" id="arpeggios" onclick="console.log('here')"; (this.id)">Arpeggios   </button>
             <button class="button" id="doubleStops" ontouchstart= "showTip(this.id)">Double Stops</button>
             <button class="button" id="memorizing"  ontouchstart= "showTip(this.id)">Memorizing  </button>
             <button class="button" id="performing"  ontouchstart= "showTip(this.id)">Performing  </button>

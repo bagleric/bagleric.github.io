@@ -1,0 +1,31 @@
+{ "tasks":[ { 
+    "vibrato": [   {
+        "taskName":"Sirens",
+        "done":"false",
+        "body":"Work up the speed of your vibrato with different divisions of the beat. Set the metronome at 80 and flatten and curve your finger to an eighth note beat. Then do triplets, sixteenths, and quintuplets to the beat. Once you have mastered that on each finger, push the metronome up a notch." 
+                        },
+                        {
+        "taskName":"Moving Between Fingers",
+        "done":"false",
+        "body":"Flatten and curve finger an odd number of times and then swtich to the next finger without losing the movement of the vibrato."      
+                        },
+                {
+        "taskName":"",
+        "done":"false",
+        "body":""      
+                        }
+                    ],
+    "taskCategory": [   {
+        "taskName":"title",
+        "done":"false",
+        "body":""      
+                        },
+                        {
+        "taskName":"title",
+        "done":"false",
+        "body":""      
+                        }
+                     ]
+            }
+          ]
+}

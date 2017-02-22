@@ -1,35 +1,29 @@
-    
+function showTip(myEvent)
+{
+            xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    alert("we're number 4");
+                    document.getElementById('jsonFile').innerHTML = xmlhttp.responseText;
+                }
+                else if (xmlhttp.readyState == 3) {
+                    document.getElementById('jsonFile').innerHTML = "we're number 3";
+                    alert("we're number 3");
+                }
+                else if (xmlhttp.readyState == 2) {
+                    document.getElementById('jsonFile').innerHTML = "we're number 2";
+                    alert("we're number 2");
+                }
+                else if (xmlhttp.readyState == 1) {
+                    document.getElementById('jsonFile').innerHTML = "we're number 1";
+                    alert("we're number 1");
+                }
+                else {
+                    document.getElementById('jsonFile').innerHTML = "Waiting for server Response ...";
+                }
+            }
+            xmlhttp.open("GET", "https://bagleric.github.io/CIT261/Project1-AJMusic/tasks.json", true);
+            xmlhttp.send();
+        }
 
-      // Load the Visualization API and the corechart package.
-google.charts.load('current', {'packages':['corechart']});
-
-      // Set a callback to run when the Google Visualization API is loaded.
-google.charts.setOnLoadCallback(drawChart);
-
-      // Callback that creates and populates a data table,
-      // instantiates the pie chart, passes in the data and
-      // draws it.
-function drawChart() {
-
-        // Create the data table.
-        var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Topping');
-        data.addColumn('number', 'Slices');
-        data.addRows([
-          ['Mushrooms', 3],
-          ['Onions', 1],
-          ['Olives', 1],
-          ['Zucchini', 1],
-          ['Pepperoni', 2]
-        ]);
-
-        // Set chart options
-        var options = {'title':'How Much Pizza I Ate Last Night',
-                       'width':400,
-                       'height':300};
-
-        // Instantiate and draw our chart, passing in some options.
-        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
-        chart.draw(data, options);
-      }
-   
+}

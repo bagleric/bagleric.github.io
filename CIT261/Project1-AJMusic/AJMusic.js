@@ -6,7 +6,8 @@ function getTips() {
             console.log("AJAX:succesful");
             var object = JSON.parse(xmlhttp.responseText);
             console.log(object);
-            sessionStorage.setItem("tips", object);
+            sessionStorage.setItem("tasks", object);
+            document.getElementById("data").innerHTML = xmlhttp.responseText;
         } else {
             console.log("AJAX: working");
         }

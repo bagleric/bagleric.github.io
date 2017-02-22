@@ -12,10 +12,9 @@
               "name": "movingBetweenFingers", 
               "value":"Moving Between Fingers", 
               "viewed":"false", 
-              "body": "Flatten and curve finger an odd number of times and then swtich to the next finger without losing the movement of the vibrato."}
+              "body": "Flatten and curve finger an odd number of times and then swtich to the next finger without losing the movement of the vibrato."   }
              
-             ]
-} ,
+             ] },
                 {"name":"scales", "id"="0", "task": [       
             
                {"id":"0",

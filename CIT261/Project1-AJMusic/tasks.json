@@ -1,32 +1,25 @@
-{"taskList": {
-    "category": [
-        {"name":"vibrato", "id"="0", "task": [
-         {"id":"0",
-         "name":"sirens",
-         "value":"Sirens",
-         "viewed":"false",
-         "body":"Work up the speed of your vibrato with different divisions of the beat. Set the metronome at 80 and flatten and curve your finger to an eighth note beat. Then do triplets, sixteenths, and quintuplets to the beat. Once you have mastered that on each finger, push the metronome up a notch."},
-        {"id":"1",
-         "name": "movingBetweenFingers",
-         "value":"Moving Between Fingers",
-         "viewed":"false",
-         "body": "Flatten and curve finger an odd number of times and then swtich to the next finger without losing the movement of the vibrato."   }
-    ] },
- {"name":"scales", "id"="0", "task": [
- {"id":"0",
- "name":"example0",
- "value":"Example0",
- "viewed":"false", 
- "body": "This an example of a scale tip number 1"},
-{"id":"1", 
- "name": "example1", 
- "value":"Example1",
- "viewed":"false",
- "body": "This is an example of a scale tip number 1."   }
-             
-             ] }
-]
+{
+    "tasks":[ 
+        {
+            "category":"vibrato", 
+            "id"="0", 
+            "task": [
+                {
+                "id":"0",
+                "name":"sirens",
+                "value":"Sirens",
+                "viewed":"false",
+                "body":"Work up the speed of your vibrato with different divisions of the beat. Set the metronome at 80 and flatten and curve your finger to an eighth note beat. Then do triplets, sixteenths, and quintuplets to the beat. Once you have mastered that on each finger, push the metronome up a notch."
+                },
+                {
+                 "id":"1",
+                 "name": "movingBetweenFingers",
+                 "value":"Moving Between Fingers",
+                 "viewed":"false",
+                 "body": "Flatten and curve finger an odd number of times and then swtich to the next finger without losing the movement of the vibrato."  
+                }
+            ]
+        }
+    ]
 }
-}
- 
-          
+    

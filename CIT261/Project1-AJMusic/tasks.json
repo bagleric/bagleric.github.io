@@ -19,7 +19,108 @@
                  "body": "Flatten and curve finger an odd number of times and then swtich to the next finger without losing the movement of the vibrato."  
                 }
             ]
+        },
+        {
+            "category":"scales", 
+            "id":"1", 
+            "task": [
+                {
+                "id":"0",
+                "name":"example1",
+                "value":"example1",
+                "viewed":"false",
+                "body":"example1scales"
+                },
+                {
+                 "id":"1",
+                 "name": "example2",
+                 "value":"example2",
+                 "viewed":"false",
+                 "body": "example2scales"  
+                }
+            ]
+        },
+        {
+            "category":"arpeggios", 
+            "id":"2", 
+            "task": [
+                {
+                "id":"0",
+                "name":"example1",
+                "value":"example1",
+                "viewed":"false",
+                "body":"example1arpeggios"
+                },
+                {
+                 "id":"1",
+                 "name": "example2",
+                 "value":"example2",
+                 "viewed":"false",
+                 "body": "example2arpeggios"  
+                }
+            ]
+        },
+        {
+            "category":"doubleStops", 
+            "id":"2", 
+            "task": [
+                {
+                "id":"0",
+                "name":"example1",
+                "value":"example1",
+                "viewed":"false",
+                "body":"example1doubleStops"
+                },
+                {
+                 "id":"1",
+                 "name": "example2",
+                 "value":"example2",
+                 "viewed":"false",
+                 "body": "example2doubleStops"  
+                }
+            ]
+        },
+        {
+            "category":"Memorizing", 
+            "id":"2", 
+            "task": [
+                {
+                "id":"0",
+                "name":"example1",
+                "value":"example1",
+                "viewed":"false",
+                "body":"example1Memorizing"
+                },
+                {
+                 "id":"1",
+                 "name": "example2",
+                 "value":"example2",
+                 "viewed":"false",
+                 "body": "example2Memorizing"  
+                }
+            ]
+        },
+        {
+            "category":"Performing", 
+            "id":"2", 
+            "task": [
+                {
+                "id":"0",
+                "name":"example1",
+                "value":"example1",
+                "viewed":"false",
+                "body":"example1Performing"
+                },
+                {
+                 "id":"1",
+                 "name": "example2",
+                 "value":"example2",
+                 "viewed":"false",
+                 "body": "example2Performing"  
+                }
+            ]
         }
+        
     ]
 }
     

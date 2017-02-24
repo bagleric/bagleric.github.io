@@ -1,15 +1,15 @@
 function loadTasks() {
     console.log("Function: loadTasks");
-    if (sessionStorage.getItem("myTasks") !== undefined) {
-        return;
-    }
+    //if (sessionStorage.getItem("myTasks") !== undefined) {
+      //  return;
+    //}
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
         if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
             console.log("AJAX:succesful");
             var object = JSON.parse(xmlhttp.responseText);
             console.log(object);
-            sessionStorage.setItem("myTasks", object);
+            sessionStorage.setItem("myTasks", xmlhttp.responseText);
         } else {
             console.log("AJAX: working");
         }
@@ -19,12 +19,13 @@ function loadTasks() {
 }
 
 function getTask(itemId) {
-    console.log.itemId;
+    console.log(itemId);
     console.log("Function: getTask()");
-    var myTasks, i;
+    var myTasks, i, object;
     
-    myTasks = sessionStorage.getItem("tasks");
+    object = sessionStorage.getItem("myTasks");
+    myTasks = JSON.parse(object);
     console.log(myTasks);
     i = Math.round(Math.random());
-    document.getElementById("data").innerHTML = myTasks.tasks.itemId;
+    document.getElementById("data").innerHTML = "<h1>" + myTasks.tasks[itemId].task[i].value + "</h1><h4>" + myTasks.tasks[itemId].task[i].body + "</h4>";
 }

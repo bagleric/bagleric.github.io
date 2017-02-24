@@ -11,21 +11,23 @@
     </head>
  
     <body onload="loadTasks()"> 
+        <header><h1>AJPracticing</h1>
+        <h3>for violin</h3></header>
         <div class="view">
         <div id="chart_div">Here will be the weekly activity summary.</div>
         <div class="data" id="data">
-            <h4>Technique: Tip #2</h4>
+            <h1 style="text-align:center;">Select a category from below</h1>
             
             </div>
         <div class="difficultySlider"></div>
         <div class="bottom">    
             <span class="buttons">
             <button class="button" id="0" name="vibrato"     onclick= "getTask(this.id)">Vibrato     </button>
-            <button class="button" id="1" name="scales"      ontouchstart= "getTask(this.id)">Scales      </button>  
-            <button class="button" id="2" name="arpeggios" ontouchstart="getTask(this.id)">Arpeggios   </button>
-            <button class="button" id="3" name="doubleStops" ontouchstart= "getTask(this.id)">Double Stops</button>
-            <button class="button" id="4" name="memorizing"  ontouchstart= "getTask(this.id)">Memorizing  </button>
-            <button class="button" id="5" name="performing"  ontouchstart= "getTask(this.id)">Performing  </button>
+            <button class="button" id="1" name="scales"      onclick= "getTask(this.id)">Scales      </button>  
+            <button class="button" id="2" name="arpeggios" onclick="getTask(this.id)">Arpeggios   </button>
+            <button class="button" id="3" name="doubleStops" onclick= "getTask(this.id)">Double Stops</button>
+            <button class="button" id="4" name="memorizing"  onclick= "getTask(this.id)">Memorizing  </button>
+            <button class="button" id="5" name="performing"  onclick= "getTask(this.id)">Performing  </button>
                 </span>
             <span class="timer">
                 <button class="timerButton">Timer 00:00:00</button>

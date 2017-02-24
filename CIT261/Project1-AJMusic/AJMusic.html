@@ -20,12 +20,12 @@
         <div class="difficultySlider"></div>
         <div class="bottom">    
             <span class="buttons">
-            <button class="button" id="vibrato"     ontouchstart= "showTip(this.id)">Vibrato     </button>
-            <button class="button" id="scales"      ontouchstart= "showTip(this.id)">Scales      </button>  
-            <button class="button" id="arpeggios" onclick="console.log('here')"; (this.id)">Arpeggios   </button>
-            <button class="button" id="doubleStops" ontouchstart= "showTip(this.id)">Double Stops</button>
-            <button class="button" id="memorizing"  ontouchstart= "showTip(this.id)">Memorizing  </button>
-            <button class="button" id="performing"  ontouchstart= "showTip(this.id)">Performing  </button>
+            <button class="button" id="vibrato"     ontouchstart= "getTask(this.id)">Vibrato     </button>
+            <button class="button" id="scales"      ontouchstart= "getTask(this.id)">Scales      </button>  
+            <button class="button" id="arpeggios" ontouchstart="getTask(this.id)">Arpeggios   </button>
+            <button class="button" id="doubleStops" ontouchstart= "getTask(this.id)">Double Stops</button>
+            <button class="button" id="memorizing"  ontouchstart= "getTask(this.id)">Memorizing  </button>
+            <button class="button" id="performing"  ontouchstart= "getTask(this.id)">Performing  </button>
                 </span>
             <span class="timer">
                 <button class="timerButton">Timer 00:00:00</button>

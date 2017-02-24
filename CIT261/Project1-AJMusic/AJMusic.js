@@ -1,4 +1,7 @@
-function getTips() {
+function loadTasks() {
+    if (sessionStorage.getItem("tasks") !== undefined) {
+        return;
+    }
     console.log("Function: getTips");
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
@@ -7,11 +10,18 @@ function getTips() {
             var object = JSON.parse(xmlhttp.responseText);
             console.log(object);
             sessionStorage.setItem("tasks", object);
-            document.getElementById("data").innerHTML = xmlhttp.responseText;
         } else {
             console.log("AJAX: working");
         }
     };
     xmlhttp.open("GET", "https://bagleric.github.io/CIT261/Project1-AJMusic/tasks.json", true);
     xmlhttp.send();
+}
+
+function getTask(itemId) {
+    var tasks, i;
+    
+    tasks = sessionStorage.getItem("tasks");
+    i = Math.round(Math.random());
+    document.getElementById("data").innerHTML = tasks[itemId][i].value + tasks[itemId][i].body;
 }

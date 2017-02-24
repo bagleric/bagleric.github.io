@@ -24,7 +24,7 @@ function getTask(itemId) {
     var myTasks, i;
     
     myTasks = sessionStorage.getItem("tasks");
-    console.log(tasks);
+    console.log(myTasks);
     i = Math.round(Math.random());
     document.getElementById("data").innerHTML = myTasks.tasks.itemId.task.i.value + myTasks.tasks.itemId.task.i.body;
 }

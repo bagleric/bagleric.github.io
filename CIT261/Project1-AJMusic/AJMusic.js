@@ -1,6 +1,6 @@
 function loadTasks() {
     console.log("Function: loadTasks");
-    if (sessionStorage.getItem("tasks") !== undefined) {
+    if (sessionStorage.getItem("myTasks") !== undefined) {
         return;
     }
     var xmlhttp = new XMLHttpRequest();
@@ -9,7 +9,7 @@ function loadTasks() {
             console.log("AJAX:succesful");
             var object = JSON.parse(xmlhttp.responseText);
             console.log(object);
-            sessionStorage.setItem("tasks", object);
+            sessionStorage.setItem("myTasks", object);
         } else {
             console.log("AJAX: working");
         }
@@ -26,5 +26,5 @@ function getTask(itemId) {
     myTasks = sessionStorage.getItem("tasks");
     console.log(myTasks);
     i = Math.round(Math.random());
-    document.getElementById("data").innerHTML = myTasks.tasks.itemId.task.i.value + myTasks.tasks.itemId.task.i.body;
+    document.getElementById("data").innerHTML = myTasks.tasks.itemId;
 }

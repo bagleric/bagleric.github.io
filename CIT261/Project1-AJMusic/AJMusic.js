@@ -28,4 +28,5 @@ function getTask(itemId) {
     console.log(myTasks);
     i = Math.round(Math.random());
     document.getElementById("data").innerHTML = "<h1>" + myTasks.tasks[itemId].task[i].value + "</h1><h4>" + myTasks.tasks[itemId].task[i].body + "</h4>";
+    
 }

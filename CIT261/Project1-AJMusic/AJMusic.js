@@ -21,10 +21,10 @@ function loadTasks() {
 function getTask(itemId) {
     console.log.itemId;
     console.log("Function: getTask()");
-    var tasks, i;
+    var myTasks, i;
     
-    tasks = sessionStorage.getItem("tasks");
+    myTasks = sessionStorage.getItem("tasks");
     console.log(tasks);
     i = Math.round(Math.random());
-    document.getElementById("data").innerHTML = tasks[itemId].task[i].value + tasks[itemId].task[i].body;
+    document.getElementById("data").innerHTML = myTasks.tasks.itemId.task.i.value + myTasks.tasks.itemId.task.i.body;
 }

@@ -19,6 +19,7 @@ function loadTasks() {
 }
 
 function getTask(itemId) {
+    console.log("Function: getTask()");
     var tasks, i;
     
     tasks = sessionStorage.getItem("tasks");

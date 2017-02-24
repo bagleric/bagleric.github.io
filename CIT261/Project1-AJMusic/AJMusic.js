@@ -19,12 +19,12 @@ function loadTasks() {
 }
 
 function getTask(itemId) {
-    
+    console.log.itemId;
     console.log("Function: getTask()");
     var tasks, i;
     
     tasks = sessionStorage.getItem("tasks");
     console.log(tasks);
     i = Math.round(Math.random());
-    document.getElementById("data").innerHTML = tasks[itemId][i].value + tasks[itemId][i].body;
+    document.getElementById("data").innerHTML = tasks[itemId].task[i].value + tasks[itemId].task[i].body;
 }

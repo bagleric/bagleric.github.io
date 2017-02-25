@@ -1,5 +1,5 @@
 html{
-    font-family:cursive;
+    font-family:Century Gothic;
 background-color: darkred;}
 .view{
     background-color: darkred;
@@ -7,7 +7,8 @@ background-color: darkred;}
     height: 10in;
 }
 .data{
-    min-height: 50%;
+    font-size: 20pt;
+    min-height: 6in;
     border-color: black;
     border-style: solid;
     border-width: 3px;
@@ -18,8 +19,10 @@ background-color: darkred;}
 }
 
 .button{
+    padding: .1in;
     height: 1.5in;
-    min-width: 40%;
+    min-width: 2in;
+    font-size: 20pt;
 }
 
 .bottom {
@@ -55,8 +58,9 @@ background-color: darkred;}
     position: absolute;
     right:-3%;
     bottom:-.14in;
-    width: 25%;
-    height: 2in;    
+    width: in;
+    height: 2in; 
+    font-size: 20pt;
 
 }
 
@@ -67,8 +71,8 @@ header{
     background-color:darkred;
     border: none;
     color:white;
-
-    padding: .25in;
+    padding: .1in;
+    font-size: 20pt;
     
 }
 

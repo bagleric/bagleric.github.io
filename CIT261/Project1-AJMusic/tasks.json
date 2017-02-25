@@ -3,6 +3,7 @@
         {
             "category":"vibrato", 
             "id":"0", 
+            "quantity":"2",
             "task": [
                 {
                 "id":"0",
@@ -22,101 +23,177 @@
         },
         {
             "category":"scales", 
-            "id":"1", 
+            "id":"1",
+            "quantity":"7",
             "task": [
                 {
                 "id":"0",
-                "name":"example1",
-                "value":"example1",
+                "name":"intonation",
+                "value":"Intonation",
                 "viewed":"false",
-                "body":"example1scales"
+                "body":"Play slowly with a drone on the tonic pitch. Experiment by going faster and changing the drone to a different pitch in the scale."
                 },
                 {
                  "id":"1",
-                 "name": "example2",
-                 "value":"example2",
+                 "name": "smoothBowChanges",
+                 "value":"Smooth Bow Changes",
                  "viewed":"false",
-                 "body": "example2scales"  
+                 "body": "Think of the bow change as a ski lift (a round motion instead of up and down). Focus on a fluid tone."  
+                },
+                {
+                 "id":"2",
+                 "name": "smoothShifts",
+                 "value":"Smooth Shifts",
+                 "viewed":"false",
+                 "body": "Isolate challenging shifts. Focus on releasing pressure and gently gliding the finger to the appropriate pitch. Practice using a guide finger."  
+                },
+                {
+                 "id":"3",
+                 "name": "perfectRhythm",
+                 "value":"Perfect Rhythm",
+                 "viewed":"false",
+                 "body": "Set the metronome between 50 and 60 bpm and do each acceleration (4, 6, 8, 12, & 16 notes per bow). Make sure each note lines up perfectly with the metronome pulse."  
+                },
+                {
+                 "id":"4",
+                 "name": "moneyBow",
+                 "value":"Money Bow",
+                 "viewed":"false",
+                 "body": "Practice using full bows. Save and spend bow to create a seamless sound."  
+                },
+                {
+                 "id":"5",
+                 "name": "perfectAlignment",
+                 "value":"Perfect Alignment",
+                 "viewed":"false",
+                 "body": "Check for tension or misalignment in posture. Focus on individual issues while playing scales."  
+                },
+                {
+                 "id":"6",
+                 "name": "musicality",
+                 "value":"Musicality",
+                 "viewed":"false",
+                 "body": "Make scales sound like music! Crescendo to the top and decrescendo to the bottom."  
                 }
+                
             ]
         },
         {
             "category":"arpeggios", 
             "id":"2", 
+            "quantity":"2",
             "task": [
                 {
                 "id":"0",
                 "name":"example1",
-                "value":"example1",
+                "value":"Hey there!",
                 "viewed":"false",
-                "body":"example1arpeggios"
+                "body":"</p>Well Looky there, look's like you found our weak spot. Exercises are yet to come.</p> <p>Email suggestions to bagleric@outlook.com with 'AJPracticing' as the subject.</p>"
                 },
                 {
                  "id":"1",
                  "name": "example2",
-                 "value":"example2",
+                 "value":"Hey there!",
                  "viewed":"false",
-                 "body": "example2arpeggios"  
+                 "body": "</p>Well Looky there, look's like you found our weak spot. Exercises are yet to come.</p> <p>Email suggestions to bagleric@outlook.com with 'AJPracticing' as the subject.</p>"  
                 }
             ]
         },
         {
             "category":"doubleStops", 
             "id":"2", 
+            "quantity":"7",
             "task": [
                 {
                 "id":"0",
-                "name":"example1",
-                "value":"example1",
+                "name":"Smooth",
+                "value":"Smooth",
                 "viewed":"false",
-                "body":"example1doubleStops"
+                "body":"Slur between each double stop, and especially between each shift."
                 },
                 {
                  "id":"1",
-                 "name": "example2",
-                 "value":"example2",
+                 "name": "MusicFromHeart",
+                 "value":"Music from the heart and mind",
                  "viewed":"false",
-                 "body": "example2doubleStops"  
+                 "body": "You should never have to look at the music. Think of the intervals and pitches in your head."  
+                },
+                {
+                 "id":"2",
+                 "name": "intervals",
+                 "value":"Intervals",
+                 "viewed":"false",
+                 "body": "Say the interval (ex: “Major third”) between the bottom and top note, and the interval that it feels like (ex: “feels like a step and a half between my first and third fingers”)."  
+                },
+                {
+                 "id":"3",
+                 "name": "isolateStrings",
+                 "value":"Isolate Strings",
+                 "viewed":"false",
+                 "body": "Play only the upper or lower string while fingering both pitches on the left hand."  
+                },
+                {
+                 "id":"4",
+                 "name": "isolateUpper",
+                 "value":"Isolate upper or lower line of music",
+                 "viewed":"false",
+                 "body": "Practice only one line at a time. Make sure the intonation is perfect and the shifts are solid."  
+                },
+                {
+                 "id":"5",
+                 "name": "noteNames",
+                 "value":"Note Names",
+                 "viewed":"false",
+                 "body": "Say the note names aloud as you play."  
+                },
+                {
+                 "id":"6",
+                 "name": "solfege",
+                 "value":"Solfege",
+                 "viewed":"false",
+                 "body": "Say the solfege for the key you are practicing as you play. (ex: “la and do”)."  
                 }
             ]
         },
         {
             "category":"Memorizing", 
             "id":"2", 
+            "quantity":"2",
             "task": [
                 {
                 "id":"0",
                 "name":"example1",
-                "value":"example1",
+                "value":"We'll get right on that!",
                 "viewed":"false",
-                "body":"example1Memorizing"
+                "body":"</p>Looky there, look's like you found our weak spot. Exercises are yet to come.</p> <p>Email suggestions to bagleric@outlook.com with 'AJPracticing' as the subject.</p>"
                 },
                 {
                  "id":"1",
                  "name": "example2",
-                 "value":"example2",
+                 "value":"We'll get right on that!",
                  "viewed":"false",
-                 "body": "example2Memorizing"  
+                 "body": "</p>Looky there, look's like you found our weak spot. Exercises are yet to come.</p> <p>Email suggestions to bagleric@outlook.com with 'AJPracticing' as the subject.</p>"  
                 }
             ]
         },
         {
             "category":"Performing", 
             "id":"2", 
+            "quantity":"2",
             "task": [
                 {
                 "id":"0",
                 "name":"example1",
-                "value":"example1",
+                "value":"Yet to come!",
                 "viewed":"false",
-                "body":"example1Performing"
+                "body":"<p>We're working on that for you, exercises yet to come!</p><p>Email suggestions to bagleric@outlook.com with 'AJPracticing' as the subject.</p>"
                 },
                 {
                  "id":"1",
                  "name": "example2",
-                 "value":"example2",
+                 "value":"Yet to come!",
                  "viewed":"false",
-                 "body": "example2Performing"  
+                 "body": "</p>Well looky there, you found an empty spot. Exercises yet to come.</p> <p>Email suggestions to bagleric@outlook.com with 'AJPracticing' as the subject.</p>"  
                 }
             ]
         }

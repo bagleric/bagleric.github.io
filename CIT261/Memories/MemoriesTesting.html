@@ -13,7 +13,11 @@
         if(myRequest.readyState === 4 && myRequest.status === 200) {
               console.log("AJAX succeded");
             var object= JSON.parse(myRequest.responseText);
-                            console.log(object);  document.getElementById("test").innerHTML = "<p>"+object.memory.prompt + "</p>" + "<video src='" + object.memory.videoURL;
+                            console.log(object); 
+           
+            myDiv = document.createElement("div");
+          myDiv.innerHTML = "<p>"+object.memory.prompt + "</p>" + "<video src='" + object.memory.videoURL;  document.querySelector(".test").appendChild(myDiv);
+           /* document.getElementById("test").innerHTML = "<p>"+object.memory.prompt + "</p>" + "<video src='" + object.memory.videoURL;*/
                         }
                     else{
                         console.log("AJAX working...");
@@ -32,7 +36,7 @@
             <img  width="45%" src="picture.jpg"/>
         </div>
         
-        <div onclick=loadMemories() id="test" style="background:green; margin:.5in; padding:.5in; color:white;"> Here your videos should appear.</div>
+        <div onclick=loadMemories() class="test" style="background:green; margin:.5in; padding:.5in; color:white;"> Here your videos should appear.</div>
         
 </body>
 

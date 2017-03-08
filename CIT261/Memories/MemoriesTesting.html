@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="S-UA-Compatible" content="ie=edge"/>
+        <title>MemoriesTesting</title>
+        <script>
+            function loadMemories() {
+            console.log("Function: Load Memories");
+                var myRequest = new XMLHttpRequest();
+                myRequest.onreadystatechange = function () {
+                    console.log("Enterd AJAX");
+                    if(myRequest.readyState === 4 && myRequest.status === 200) {
+                            console.log("AJAX succeded");
+                            var i, object;
+                        object = JSON.parse(myRequest.responseText);
+                            console.log(object);
+                            for ( i = 0; i < object.length; i++){
+                                document.getElementById("test").innerHTML = "<p>"+object[i].prompt + "</p>" + "<video src='" + object[i].videoURL;
+                            }
+                        }
+                    else{
+                        console.log("AJAX working...");
+                    }
+                };
+                myRequest.open("GET", "memoryFile.json", true);
+                myRequest.send();
+            }
+            
+        </script>
+    </head>
+
+    <body>
+        <div style="background:red;">
+           <video width="45%" controls autoplay src="video.mp4"></video>
+            <img  width="45%" src="picture.jpg"/>
+        </div>
+        
+        <div onclick=loadMemories() class="test" style="background:green; margin:.5in; padding:.5in; color:white;"> Here your videos should appear.</div>
+        
+</body>
+
+    </html>

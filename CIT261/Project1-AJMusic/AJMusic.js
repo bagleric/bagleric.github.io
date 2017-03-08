@@ -31,3 +31,18 @@ function getTask(itemId) {
     document.getElementById("data").innerHTML = "<h1>" + myTasks.tasks[itemId].task[i].value + "</h1><h4>" + myTasks.tasks[itemId].task[i].body + "</h4>";
     
 }
+
+function workTimer(timing) {
+    console.log("Function: Timer" +" : "+ timing)
+    if (timing=== 't') {
+    //start timer " : "+
+        document.getElementById('timer').onclick = "workTimer('f')";
+      timing = 'f';  
+        console.log(timing);
+    } else {
+     //stop timer   
+        document.getElementById('timer').onclick = "workTimer('true')";
+              timing = 't';  
+        console.log('f');
+    }
+}

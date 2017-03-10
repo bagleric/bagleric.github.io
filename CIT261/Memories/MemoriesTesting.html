@@ -14,55 +14,58 @@
                     console.log("AJAX succeded");
                     var object = JSON.parse(myRequest.responseText);
                     console.log(object);
-                    //go through the list of memories
-                    var n = 0;
-                    console.log(Object.keys(object).length);
-                    for (var i = 0; i < Object.keys(object).length; i++) {
-                        console.log("for loop");
-                        var history = document.createElement("div");
-                        //create the new memory div and determine the size
-                        var memoryDiv = document.createElement("div");
-                        if (n % 4 === 0) {
-                            console.log("n%4" + ":" + n);
-                            memoryDiv.className = "bigDiv";
-                            n++;
-                            history.appendChild(memoryDiv);
-                        }
-                        else {
-                            console.log("else" + ":" + n);
-                            memoryDiv.className = "smallDiv";
-                            n++;
-                            history.appendChild(memoryDiv);
-                        }
-                        //add a prompt title
-                        var prompt = document.createElement("div");
-                        prompt.innerHTML = object.memory.prompt;
-                        //add a video
-                        var video = document.createElement("video");
-                        video.src = object.memory.videoURL;
-                        video.setAttribute("controls", "controls");
-                        //add a picture
-                        var image = document.createElement("img");
-                        image.src = object.memory.photoURL;
-                        memoryDiv.appendChild(prompt);
-                        memoryDiv.appendChild(video);
-                        memoryDiv.appendChild(image);
-                    }
-                    //                    var myDiv = document.createElement("div");
-                    //                    myDiv.innerHTML = "<p>" + object.memory.prompt + "</p>" + "<video src=\"https://bagleric.github.io/CIT261/Memories/video.mp4\"";
-                    //var video = document.createElement("video");
-                    //var history = document.querySelector(".test");
-                    document.replaceChild(history, document.querySelector(".test"));
-                    history.className = "test";
-                    //                    video.src = "https://bagleric.github.io/CIT261/Memories/video.mp4";
-                    /* document.getElementById("test").innerHTML = "<p>"+object.memory.prompt + "</p>" + "<video src='" + object.memory.videoURL;*/
-                }
+                    
+                    parseMemories(object);
+                                    }
                 else {
                     console.log("AJAX working...");
                 }
             };
             myRequest.open("GET", "https://bagleric.github.io/CIT261/Memories/memoryFile.json", true);
             myRequest.send();
+        }
+        function parseMemories(object){
+            //go through the list of memories
+                    var n = 0;
+                    console.log(Object.keys(object).length);
+                    var history = document.createElement("div");
+                    for (var i = 0; i < Object.keys(object).length; i++) {
+                        console.log("for loop");
+        
+                        //create the new memory div and determine the size
+                        var memoryDiv = document.createElement("div");
+
+                        //add a prompt title
+                        var prompt = document.createElement("div");
+                        prompt.innerHTML = object.memory[i].prompt;
+                        
+                        //add a video
+                        var video = document.createElement("video");
+                        video.src = object.memory[i].videoURL;
+                        video.setAttribute("controls", "controls");
+                       
+                        //add a picture
+                        var image = document.createElement("img");
+                        image.src = object.memory[i].photoURL;
+                        memoryDiv.appendChild(prompt);
+                        memoryDiv.appendChild(video);
+                        memoryDiv.appendChild(image);
+                        
+                        //assign the memoryDiv a size by giving it a class name.
+                        if (n % 4 === 0) {
+                            console.log("n%4" + ":" + n);
+                            memoryDiv.className = "bigDiv";
+                        }
+                        else {
+                            console.log("else" + ":" + n);
+                            memoryDiv.className = "smallDiv";
+                        }
+                        n++;
+                        history.appendChild(memoryDiv);   
+                    }
+                    console.log(document.querySelector(".test").childNodes);
+                    document.querySelector(".test").replaceChild(history, (document.querySelector(".test").childNodes[0]));
+                    console.log(document.querySelector(".test").childNodes);
         }
     </script>
     <style>

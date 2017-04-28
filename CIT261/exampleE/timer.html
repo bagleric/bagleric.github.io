@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="timer.css" type="text/css">
+</head>
+<body onclick="setInterval(renderTime, 40)">
+    
+<!--    drag and drop features-->
+   <div id="time1" class="tasks" ondrop="drop(event)" ondragover="allowDrop(event)">
+        
+   </div>
+   
+    <div id="time2" class="tasks" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+    <div id="time3" class="tasks" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+    <div id="time4" class="tasks" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+    <hr>
+    <br>
+    
+<!--    canvas elements-->
+   <canvas id="timer" width="300" height="100"> Your browser does not support canvas.</canvas>
+  <img draggable="true" id="dragItem" ondragstart="drag(event)" >
+<p>Once your done timing drag the timer to the appropriate category</p>
+    <div class="controls">     <img  class="controlButtons" src="play.png" id="start">
+    <img  class="controlButtons" src="pause.png" id="pause">
+    <img  class="controlButtons" src="stop.png" id="stop">
+    <img  class="controlButtons" src="delete.png" id="delete"></div>
+
+    <script src="timer.js"></script>
+    
+</body>
+
+</html>

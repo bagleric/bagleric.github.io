@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas Practice</title>
+</head>
+<link rel="stylesheet" type="text/css" href="timeManager.css"/>
+<!--
+
+
+<body onload="setInterval(drawCanvas, 40)">
+-->
+   <body onload="setInterval(renderTime, 40)">
+    <canvas id="canvas" width="500" height="500"> You need to have canvas. </canvas>
+    <br>
+    <hr>
+    <button id="start">start</button>
+    <button id="pause">pause</button>
+    <button id="stop">stop</button>
+    <br>
+    <hr>
+    <img id="myImage"/>
+
+<br>
+<br>
+ 
+ <h1>actual Time</h1>
+ <p id ="time"></p>
+ <h1>stopwatch time</h1>
+ <p id="stopwatch"></p>
+ 
+ <canvas id="timer" width="500" height="500"> Your browser does not support canvas.</canvas>
+ <script src="timeManager.js">
+    
+    </script>
+
+</body>
+</html>

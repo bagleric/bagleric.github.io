@@ -1,0 +1,106 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	font-family:"Tenor Sans";
+	background-image: url("../images/mountains.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+.header{
+	background-color:antiquewhite;
+}
+
+.subjectBox{
+	display: flex;
+	height:250px;
+	width: 250px;
+	background-color: antiquewhite;
+	opacity: .9;
+	margin: 25px;
+	padding: 10px;
+	text-align: center;
+	color:darkgoldenrod;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+.container{
+	background-color: antiquewhite;
+	opacity: .9;
+	max-width: 300px;
+	padding: 50px;
+	text-align: center;
+	margin: auto;
+	color:darkgoldenrod 
+}
+.parent{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 1000px;
+	margin: 0 auto;
+	
+			
+}
+#sub {
+	padding-top: 50px;
+	border-top: thin solid darkgoldenrod;
+}
+.title{
+	text-align: center;
+}
+h1 {
+	font-family: "Tenor Sans";
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+}
+h3 {
+	font-family: "Tenor Sans";
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 15.4px;
+}
+p {
+	font-family: "Tenor Sans";
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+}
+blockquote {
+	font-family: "Tenor Sans";
+	font-size: 21px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 30px;
+}
+pre {
+	font-family: "Tenor Sans";
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 18.5714px;
+}
+footer{
+	background-color: sienna;
+	height: 200px;
+	width:120%;
+	margin-left:-20px;
+	display: flex;
+	flex-wrap: wrap;
+	color:whitesmoke;
+	align-content: stretch;
+	justify-content:space-around;
+	
+}
+

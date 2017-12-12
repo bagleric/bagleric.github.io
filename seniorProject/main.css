@@ -23,12 +23,12 @@ h6{
 }
 
 .page{
-    height: 9.5in;
+    height: 9.75in;
     width: 7.25in;
     border-style: solid;
     border-color: #388E3C;
     border-width: thick;
-    margin: .1in;
+    margin: .2in;
 }
 .italic{
     font-style: italic;

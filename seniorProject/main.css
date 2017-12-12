@@ -1,5 +1,5 @@
 body{
-    
+    padding:1in;
 }
 
 h1{
@@ -32,11 +32,13 @@ h6{
     background: #388E3C;
     color: white;
     font-weight: bold;
+    padding: 10px
 }
 
 .tableHeading{
     background: #C8E6C9;
     color: #757575;
+    padding: 8px;
 }
 
 .dark-primary-color    { background: #388E3C; }

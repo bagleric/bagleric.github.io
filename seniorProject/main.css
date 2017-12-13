@@ -25,9 +25,11 @@ h6{
 .page{
     height: 9.75in;
     width: 7.25in;
+/*
     border-style: solid;
     border-color: #388E3C;
     border-width: thick;
+*/
     margin: .2in;
 }
 .italic{
@@ -50,6 +52,17 @@ h6{
     padding: 8px;
 }
 
+.record{
+    width: 3in;
+}
+.divider{
+    height:2px;
+    width: auto;
+}
+
+textRight{
+    text-align: right;
+}
 .dark-primary-color    { background: #388E3C; }
 .default-primary-color { background: #4CAF50; }
 .light-primary-color   { background: #C8E6C9; }

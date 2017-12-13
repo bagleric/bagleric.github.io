@@ -53,7 +53,8 @@ h6{
 }
 
 .record{
-    width: 3in;
+    width: 3.5in;
+    border: 1px solid black;
 }
 .divider{
     height:2px;

@@ -64,6 +64,10 @@ h6{
 textRight{
     text-align: right;
 }
+
+.indent1{
+    margin-left: .5in;
+}
 .dark-primary-color    { background: #388E3C; }
 .default-primary-color { background: #4CAF50; }
 .light-primary-color   { background: #C8E6C9; }
